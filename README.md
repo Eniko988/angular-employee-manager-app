@@ -1,3 +1,7 @@
+# Please follow these steps in command line:
+Run `npm install` | Run `npm start` | open your browser on localhost | open new terminal in Command line | 
+Run `npm run node`| refresh page to fill data
+
 # AngularNotesApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.11.
