@@ -1,0 +1,24 @@
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <img src="/assets/profile.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+    <a class="navbar-brand" routerLink="">Employee Manager</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+        </li>
+        <li class="nav-item">
+          <button *ngIf = "userAuthenticated" class="btn" type="submit">
+            <a routerLink="employee-data">Add data</a>
+          </button>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <button  *ngIf = "!userAuthenticated" class="btn me-2" type="submit"><a  routerLink="login">Login</a></button>
+        <button  *ngIf = "!userAuthenticated" class="btn me-2" type="submit"><a routerLink="sign-up">Sign up</a></button>
+        <button  *ngIf = "userAuthenticated" class="btn" type="submit" (click) = "logout()"><a>Logout</a></button>
+      </form>
+    </div>
+  </div>
+</nav>

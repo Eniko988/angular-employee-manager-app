@@ -1,0 +1,10 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 16px;
+}
+
+button {
+    margin-top: 10px;
+}

@@ -1,0 +1,35 @@
+
+  <div class="row" >
+    <div class="col">
+      <div *ngIf = "!isAuthenticated" class = title-container>
+        <h4><p>please login to modify and create new data!</p></h4>
+      </div>
+        <table class="table">
+            <thead class="table-success">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>E-mail</th>
+                <th>Phone</th>
+                <th *ngIf = "isAuthenticated">Modify</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor='let employee of employees; let i = index'>
+                    <td>{{employee.firstName}}</td>
+                    <td>{{employee.lastName}}</td>
+                    <td>{{employee.email}}</td>
+                    <td>{{employee.phone}}</td>
+                    <td *ngIf = "isAuthenticated">
+                      <button (click) = "onDelete(employee.id)" class="btn"><i class="bi bi-trash-fill"></i></button>   
+                      <button (click) = "onEdit(employee.id)" class="btn"><i class="bi bi-pencil-fill"></i></button>
+                    </td>    
+                </tr>   
+            </tbody>
+        </table>
+      </div>
+  </div>
+
+  
+
+

@@ -1,0 +1,37 @@
+.table {
+    margin: 16px 70px;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288)
+}
+
+.bi-pencil-fill {
+    color: rgb(46, 28, 212);
+}
+
+.bi-trash-fill {
+    color: #E83338;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-add {
+    margin-top: 16px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: rgb(20, 22, 134);
+    color: white;
+    border-color: transparent;
+    padding: 10px;
+    width: 15%;
+    font-weight: bold;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: #a30808;
+    margin-top: 16px;
+}

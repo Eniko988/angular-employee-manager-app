@@ -1,0 +1,13 @@
+.container {
+    max-width: 600px;
+    padding: 100px;
+}
+
+button {
+    margin-top: 10px;
+    width: 50%;
+}
+
+.form-group label {
+    color: rgb(44, 43, 43);
+}

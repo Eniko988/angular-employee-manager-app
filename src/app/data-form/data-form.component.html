@@ -1,0 +1,20 @@
+        <div class="container">
+            <form (ngSubmit)="onSubmit()" [formGroup]="employeeForm">
+                <div class="form-group">
+                   <label for="firstName">First name</label>
+                   <input type="text" class="form-control" formControlName="firstName">
+       
+                   <label for="lastName">Last name</label>
+                   <input type="text" class="form-control" formControlName="lastName">
+       
+                   <label for="email">Email</label>
+                   <input type="text" class="form-control" formControlName="email">
+       
+                   <label for="phone">Phone</label>
+                   <input type="number" class="form-control" formControlName="phone">
+                </div>
+                <button [disabled]= "!employeeForm.valid" class="btn btn-success" type="submit">Submit</button>
+            </form>
+        </div>
+      
+

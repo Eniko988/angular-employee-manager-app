@@ -1,0 +1,23 @@
+.navbar-expand-lg {
+    width: 100vw;
+}
+
+.navbar {
+    background-color: #0FC2C0;
+}
+
+.navbar a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar img {
+    margin-right: 6px;
+}
+
+button {
+    border-radius: 5px;
+    background-color: #008F8C;
+    border-color: transparent;
+}
